@@ -1,6 +1,9 @@
 buildscript {
 	repositories {
 		maven { url "https://repo.spring.io/plugins-release" }
+		maven { url "https://maven.aliyun.com/repository/spring-plugin" }
+		maven { url "https://maven.aliyun.com/nexus/content/repositories/spring-plugin" }
+		maven { url "https://repo.spring.io/plugins-release" }
 	}
 	dependencies {
 		classpath("io.spring.gradle:propdeps-plugin:0.0.8")
@@ -126,6 +129,9 @@ configure(allprojects) { project ->
 	repositories {
 		maven { url "https://repo.spring.io/libs-release" }
 		maven { url "https://repo.spring.io/milestone" }  // for AspectJ 1.9 beta
+		maven { url "https://maven.aliyun.com/repository/central" }
+		maven { url "https://repo.spring.io/libs-release" }
+		mavenLocal()
 	}
 
 	dependencies {

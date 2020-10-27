@@ -265,7 +265,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				}
 			}
 
-			//创建的Bean是否需要进行类型验证，一般不需要
+			//  创建的Bean是否需要进行类型验证，一般不需要
 			if (!typeCheckOnly) {
 				//向容器标记指定的Bean已经被创建
 				markBeanAsCreated(beanName);
